@@ -9,10 +9,7 @@ directorio_deportes = {
 }
 z = [ {'x': 10, 'y': 30} ]
 
-"""
-Iterar a través de una lista de diccionarios
-Crea una función iterateDictionary(some_list)para que, dada una lista de diccionarios, la función recorra cada diccionarios de la lista e imprima cada llave y el valor asociado.
-"""
+
 def iterateDictionary(some_list):
     for dictionary in some_list:
         for key, value in dictionary.items():
