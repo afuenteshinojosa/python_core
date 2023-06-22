@@ -22,24 +22,26 @@ class Usuario:
     
 guido = Usuario("Guido van Rossum", "guido@python.com", 5000 )
 monty = Usuario("Monty Python", "monty@python.com", 6000 )
-print(guido.name)	# salida: Guido van Rossum
-print(monty.name)	# salida: Monty Python
-
+martin = Usuario("Martin Vargas", "martin@python.com", 4000)
+print(guido.name)	
+print(monty.name)	
+print(martin.name)
 
 guido.hacer_depósito(100)
 guido.hacer_depósito(200)
 guido.hacer_depósito(700)
 guido.hacer_retiro(500)
+monty.hacer_depósito(500)
 monty.hacer_depósito(50)
+monty.hacer_retiro(100)
+martin.hacer_depósito(700)
+martin.hacer_retiro(500)
+martin.hacer_retiro(200)
+martin.hacer_retiro(100)
+
 guido.mostrar_balance_usuario()
 monty.mostrar_balance_usuario()
+martin.mostrar_balance_usuario()
 
-
-"""
-hacer_retiro(self, amount): haz que este método reduzca el balance del usuario en la cantidad especificada 
-mostrar_balance_usuario(self): haz que este método imprima el nombre del usuario y el balance de cuenta en la terminal 
-Ej.: “Usuario: Guido van Rossum, Balance: $150
-
-"""
 
 
