@@ -8,7 +8,7 @@ class CuentaBancaria:
         CuentaBancaria.todas_las_cuentas.append(self)
 
     def hacer_depósito(self, amount):
-        self.balance_cuenta += amount	# la cuenta del usuario específico aumenta en la cantidad del valor recibido
+        self.balance_cuenta += amount
         print("Depósito realizado. Balance: ", self.balance_cuenta)
         return self
         
